@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Geologica:wght,CRSV@100..900,0&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #0e172a, #0e172a);
+}
+
+.container {
+    font-family: 'Figtree', sans-serif;
+    border: 1px solid #3f548f;
+    border-radius: 50px;
+    padding: 50px;
+    width: 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 38%;
+    margin-top: 5%;
+    background-color: #0e172a;
+    color: #FFF;
+    box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.52);
+}
+
+.container:hover{
+    transform: translateY(-1px);
+    box-shadow: 1px 3px 12px 5px rgba(20, 20, 20, 0.52);
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo p{
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.formContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.inputForm{
+    color: #94a3b8;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm [name='campo']{
+    font-size: 15px;
+}
+
+
+
+select, input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #2f3c4f;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 15px;
+    height: 50px;
+    outline: none;
+    background-color: #1c2639;
+    margin-top: 5px;
+}
+
+.moedaSelect {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.bandeira {
+    width: 32px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.moedaSelect select {
+    flex: 1;
+    min-width: 0;
+    margin-top: 0;
+}
+
+hr {
+    border: none;
+    flex-shrink: 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: #2f3c4f;
+    margin: 10px 0;
+}
+
+.descontos{
+    margin-top: 30px;
+    color: #768499;
+    font-size: 12px;
+}
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#negativo{
+    color: #dc667a;
+}
+
+.resultado{
+    border: 1px solid #273a6a;
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    color: #8594cf;
+    background: linear-gradient(to right, #07183a, #195e44);
+}
+
+.resultado h1{
+    color:#34d399;
+}
