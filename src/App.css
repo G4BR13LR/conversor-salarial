@@ -12,13 +12,14 @@ body{
     font-family: 'Figtree', sans-serif;
     border: 1px solid #3f548f;
     border-radius: 50px;
-    padding: 50px;
-    width: 25%;
-    height: 600px;
+    padding: 35px;
+    width: min(90%, 520px);
+    height: auto;
+    min-height: 600px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-left: 38%;
-    margin-top: 5%;
+    margin: 40px auto;
     background-color: #0e172a;
     color: #FFF;
     box-shadow: 1px 3px 12px 5px rgba(0, 0, 0, 0.52);
@@ -73,6 +74,10 @@ select, input{
     outline: none;
     background-color: #1c2639;
     margin-top: 5px;
+}
+
+select{
+    margin-right: 10px;
 }
 
 .moedaSelect {
@@ -133,4 +138,36 @@ hr {
 
 .resultado h1{
     color:#34d399;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: calc(100% - 24px);
+        min-height: auto;
+        margin: 12px auto;
+        padding: 24px 16px;
+        border-radius: 22px;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form .inputForm {
+        width: 100%;
+    }
+
+    .resultado {
+        padding: 20px 10px;
+    }
+
+    .resultado h1 {
+        font-size: 26px;
+        overflow-wrap: anywhere;
+    }
+
+    .valores {
+        gap: 8px;
+    }
 }
